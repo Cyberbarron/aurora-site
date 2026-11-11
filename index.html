@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blob" id="b1"></div>
+    <div class="blob" id="b2"></div>
+    <canvas id="gl"></canvas>
+
+    <nav class="glass">
+    <a class="brand" href="#top">Aurora</a>
+    <ul>
+        <li><a href="#music">Music</a></li>
+        <li><a href="#tour">Tour</a></li>
+        <li><a href="#join">Join</a></li>
+    </ul>
+    <a class="btn" href="#music">Listen</a>
+</nav>
+
+    <section class="hero" id="top" data-bg="#ffe3ef" data-accent="#ff3d81" data-b1="#ffb3d1" data-b2="#ffd9a8">
+    <span class="chip glass">NEW SINGLE</span>
+    <h1>
+        <span class="line"><span>Midnight</span></span>
+        <span class="line"><span>Sun</span></span>
+    </h1>
+    <p>New music, videos and tour dates, in a bright site with glass, light and a spinning globe.</p>
+    <div class="actions">
+        <a class="btn" href="#music">Listen now</a>
+        <a class="btn ghost" href="#tour">Tour dates</a>
+    </div>
+</section>
+
+<section class="block" id="music" data-bg="#dbeaff" data-accent="#2f6bff" data-b1="#a9c8ff" data-b2="#c9b8ff">
+    <h2>Featured music</h2>
+    <p class="sub">Placeholder releases. Swap in your own.</p>
+    <div class="cards" id="cards"></div>
+</section>
+
+<section class="block" id="tour" data-bg="#fff6bf" data-accent="#ff7a00" data-b1="#ffe27a" data-b2="#ffb59a">
+    <h2>Upcoming shows</h2>
+    <p class="sub">Made-up dates and venues.</p>
+    <div class="shows" id="shows"></div>
+</section>
+
+<section class="block" id="join" data-bg="#d9ffe6" data-accent="#00a86b" data-b1="#9be8c2" data-b2="#a5e4ff">
+    <h2>Join the universe</h2>
+    <p class="sub">Get new releases and tour news first.</p>
+    <div class="signup">
+        <input type="email" placeholder="Your email" aria-label="Email">
+        <button class="btn">Sign up</button>
+    </div>
+</section>
+
+<footer>
+    <span>Aurora, 2026</span>
+    <a href="#top">Back to top</a>
+</footer>
+
+<button id="pause" class="glass">Pause animation</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
